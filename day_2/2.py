@@ -1,0 +1,1 @@
+print(sum(map(lambda x: max([i/y if not ((i/y) % 1) and not i == y else 0 for i in x for y in x]), map(lambda x: tuple(map(lambda y: int(y), x.split())), open('test2.txt').readlines()))))
